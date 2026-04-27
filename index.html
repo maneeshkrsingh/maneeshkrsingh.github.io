@@ -1,179 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Maneesh Kumar Singh</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maneesh Kumar Singh</title>
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background-color: #0f172a;
-      color: #e5e7eb;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px 30px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      max-width: 700px;
-      margin: auto;
-      color: #9ca3af;
-      font-size: 1.1rem;
-    }
-
-    nav {
-      margin-top: 25px;
-    }
-
-    nav a {
-      margin: 0 12px;
-      text-decoration: none;
-      color: #60a5fa;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: #93c5fd;
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .profile-pic {
-      width: 160px;
-      border-radius: 50%;
-      margin-bottom: 25px;
-      border: 3px solid #1f2937;
-    }
-
-    .intro {
-      font-size: 1.1rem;
-      color: #d1d5db;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .links {
-      margin-top: 15px;
-    }
-
-    .links a {
-      margin: 0 10px;
-      color: #60a5fa;
-      text-decoration: none;
-    }
-
-    .links a:hover {
-      color: #93c5fd;
-    }
-
-    .section {
-      margin-top: 40px;
-    }
-
-    .section h2 {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      color: #e5e7eb;
-    }
-
-    .list {
-      line-height: 1.8;
-      color: #d1d5db;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #6b7280;
-      font-size: 0.9rem;
-    }
-  </style>
+<style>
+body { font-family: Arial; margin:0; background:#0f172a; color:#e5e7eb; }
+header { text-align:center; padding:40px 20px; }
+nav a { margin:0 10px; color:#60a5fa; text-decoration:none; }
+nav a:hover { color:#93c5fd; }
+main { max-width:900px; margin:auto; padding:20px; text-align:center; }
+p { color:#d1d5db; line-height:1.6; }
+h2 { margin-top:40px; }
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Maneesh Kumar Singh</h1>
+<header>
+<h1>Maneesh Kumar Singh</h1>
+<p>Computational Researcher — Numerical PDEs · Scientific ML · Data Assimilation</p>
 
-    <p>
-      Computational Researcher working at the intersection of Numerical PDEs, 
-      Scientific Machine Learning, and Data Assimilation.
-    </p>
+<nav>
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="teaching.html">Teaching</a>
+<a href="cv.pdf">CV</a>
+</nav>
+</header>
 
-    <div class="links">
-      <a href="https://github.com/maneeshkrsingh" target="_blank">GitHub</a> ·
-      <a href="https://scholar.google.com/citations?hl=en&user=LavliJsAAAAJ" target="_blank">Google Scholar</a> ·
-      <a href="https://maneeshkrsingh.github.io" target="_blank">Website</a>
-    </div>
+<main>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<img src="assets/img/profile.jpg" width="150" style="border-radius:50%; margin-bottom:20px;">
 
-  <main>
+<p>
+I work on computational methods for partial differential equations and data assimilation, 
+with applications in fluid dynamics and uncertainty quantification.
+</p>
 
-    <img src="assets/img/profile.jpg" alt="Maneesh Kumar Singh" class="profile-pic">
+<p>
+Currently Research Assistant Professor at SRM Institute of Science and Technology. 
+Previously at Imperial College London, University of Konstanz, and IISc Bangalore.
+</p>
 
-    <p class="intro">
-      I develop scalable computational methods for stochastic and deterministic 
-      partial differential equations, with applications in fluid dynamics, 
-      uncertainty quantification, and data assimilation. My work combines 
-      structure-preserving numerical methods with modern probabilistic and 
-      machine learning approaches.
-    </p>
+<!-- Research Highlights -->
+<h2>Research Highlights</h2>
 
-    <p class="intro">
-      I am currently a Research Assistant Professor at SRM Institute of Science 
-      and Technology, and previously held postdoctoral positions at Imperial College London, 
-      University of Konstanz, and IISc Bangalore.
-    </p>
+<p>
+<strong>Stochastic Camassa–Holm Models:</strong> Structure-preserving stochastic transport models for fluid dynamics.
+</p>
 
-    <div class="section">
-      <h2>Focus Areas</h2>
-      <div class="list">
-        • Numerical Methods for PDEs (FDM, FEM)<br>
-        • Data Assimilation & Particle Filtering<br>
-        • Scientific Machine Learning<br>
-        • Stochastic & Multiscale Modelling
-      </div>
-    </div>
+<p>
+<strong>Data Assimilation for SPDEs:</strong> Particle filtering and nudging methods for high-dimensional stochastic systems.
+</p>
 
-    <div class="section">
-      <h2>Selected Work</h2>
-      <div class="list">
-        <strong>SALT/SFLT Models</strong> – Structure-preserving stochastic transport models<br>
-        <strong>DA-SPDEs</strong> – Forward models for data assimilation in stochastic systems<br>
-        <strong>Nudging Library</strong> – Continuous data assimilation for SPDEs
-      </div>
-    </div>
+<p>
+<strong>Numerical Methods:</strong> Finite element and finite difference schemes for singularly perturbed PDEs.
+</p>
 
-  </main>
+<!-- Contact -->
+<h2>Links</h2>
 
-  <footer>
-    © 2026 Maneesh Kumar Singh
-  </footer>
+<p>
+<a href="https://github.com/maneeshkrsingh">GitHub</a> ·
+<a href="https://scholar.google.com/citations?user=LavliJsAAAAJ">Google Scholar</a> ·
+<a href="https://www.linkedin.com/in/maneesh-kumar-singh-a12a2b151/">LinkedIn</a> ·
+<a href="https://www.researchgate.net/profile/Maneesh-Singh">ResearchGate</a>
+</p>
 
+<p>Email: maneeshs@srmist.edu.in</p>
+
+</main>
 </body>
 </html>
