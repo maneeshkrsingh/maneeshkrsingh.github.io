@@ -1,35 +1,133 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Maneesh Kumar Singh - Home</title>
+  <title>Maneesh Kumar Singh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/style.css">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #0f172a;
+      color: #e5e7eb;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: auto;
+      color: #9ca3af;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      margin-top: 25px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #60a5fa;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #93c5fd;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 160px;
+      border-radius: 50%;
+      margin-bottom: 25px;
+      border: 3px solid #1f2937;
+    }
+
+    .intro {
+      font-size: 1.1rem;
+      color: #d1d5db;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #60a5fa;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
+
   <header>
     <h1>Maneesh Kumar Singh</h1>
+
     <p>
-      I am a Postdoctoral Research Associate in the Department of Mathematics at Imperial College London. 
-      My research interests include Bayesian Scientific Computing, Data Assimilation, Numerical Analysis, 
-      and Computational Mathematics.
+      Computational Researcher working at the intersection of 
+      <span class="highlight">Numerical PDEs</span>, 
+      <span class="highlight">Scientific Machine Learning</span>, and 
+      <span class="highlight">Data Assimilation</span>.
     </p>
+
     <nav>
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
-      <a href="teaching.html">Teaching</a>
       <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
+
     <img src="assets/img/profile.jpg" alt="Maneesh Kumar Singh" class="profile-pic">
-    <p>
-      Welcome to my academic homepage. Here, you'll find details about my research, teaching, 
-      publications, and academic journey. I specialize in developing computational and statistical tools 
-      for complex systems governed by partial differential equations.
+
+    <p class="intro">
+      I develop scalable computational methods for stochastic and deterministic 
+      partial differential equations, with applications in fluid dynamics, 
+      uncertainty quantification, and data assimilation. My work combines 
+      structure-preserving numerical methods with modern probabilistic and 
+      machine learning approaches.
     </p>
+
+    <p class="intro">
+      I am currently a Research Assistant Professor at SRM Institute of Science 
+      and Technology, and previously held postdoctoral positions at Imperial College London, 
+      University of Konstanz, and IISc Bangalore.
+    </p>
+
   </main>
+
+  <footer>
+    © 2026 Maneesh Kumar Singh
+  </footer>
+
 </body>
 </html>
