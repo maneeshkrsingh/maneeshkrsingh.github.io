@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maneesh Kumar Singh</title>
 
-<!-- Font Awesome for icons -->
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -23,11 +23,17 @@ header {
 }
 
 h1 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    color: #9ca3af;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
 
 nav {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 nav a {
@@ -43,65 +49,63 @@ nav a:hover {
 
 /* Main */
 main {
-    max-width: 850px;
+    max-width: 720px;
     margin: auto;
     padding: 20px;
     text-align: center;
 }
 
-p {
-    color: #d1d5db;
-    line-height: 1.7;
-    font-size: 16px;
-}
-
-h2 {
-    margin-top: 45px;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-/* Profile Image */
+/* Profile image */
 .profile-img {
     width: 150px;
     border-radius: 50%;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
-/* Links section */
+/* Text */
+p {
+    color: #d1d5db;
+    line-height: 1.8;
+    font-size: 16px;
+    margin: 12px auto;
+}
+
+/* Section */
+h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+/* Research highlights */
+.highlight {
+    margin: 15px 0;
+}
+
+/* Links */
 .links {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .links a {
     display: inline-block;
-    margin: 10px 10px;
-    padding: 12px 18px;
-    border-radius: 10px;
+    margin: 8px;
+    padding: 10px 14px;
+    border-radius: 8px;
     background: #1e293b;
     color: #e5e7eb;
     text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 15px;
+    transition: 0.3s;
+    font-size: 14px;
 }
 
 .links a i {
-    margin-right: 8px;
-    font-size: 18px;
+    margin-right: 6px;
 }
 
-/* Hover effect */
 .links a:hover {
     background: #334155;
     color: #60a5fa;
     transform: translateY(-2px);
-}
-
-/* Email */
-.email {
-    margin-top: 20px;
-    font-size: 15px;
-    color: #9ca3af;
 }
 </style>
 </head>
@@ -110,7 +114,10 @@ h2 {
 
 <header>
 <h1>Maneesh Kumar Singh</h1>
-<p>Computational Researcher : Numerical PDEs · Scientific ML · Data Assimilation</p>
+
+<p class="tagline">
+Computational Researcher · Numerical PDEs · Scientific ML · Data Assimilation
+</p>
 
 <nav>
 <a href="index.html">Home</a>
@@ -118,7 +125,6 @@ h2 {
 <a href="publications.html">Publications</a>
 <a href="teaching.html">Teaching</a>
 <a href="cv.html">CV</a>
-
 </nav>
 </header>
 
@@ -127,8 +133,10 @@ h2 {
 <img src="assets/img/profile.jpg" class="profile-img">
 
 <p>
-I work on computational methods for partial differential equations and data assimilation, generative modeling
-with applications in Geophysical Fluid Dynamics (GFD) and uncertainty quantification.
+I work on computational methods for partial differential equations and data assimilation, 
+with applications in geophysical fluid dynamics (GFD) and uncertainty quantification. 
+My research also explores scientific machine learning and generative modelling for 
+high-dimensional stochastic systems.
 </p>
 
 <p>
@@ -136,26 +144,27 @@ Currently Research Assistant Professor at SRM Institute of Science and Technolog
 Previously at Imperial College London, University of Konstanz, and IISc Bangalore.
 </p>
 
-<!-- Research Highlights -->
 <h2>Research Highlights</h2>
 
-<p>
-<strong>Bayesian Data Assimilation for SPDEs:</strong> Particle filtering and nudging methods for high-dimensional stochastic GFD models
+<p class="highlight">
+<strong>Bayesian Data Assimilation for SPDEs:</strong> Particle filtering and nudging methods 
+for high-dimensional stochastic GFD models.
 </p>
 
-<p>
-<strong>Data Assimilation using generative models :</strong> Ensemble score and  flow filter for high-dimensional stochastic GFD models
-</p>
-    
-<p>
-<strong> Structure-preserving  compatible FEM for GFD Models:</strong> Structure-preserving GFD models (determinstic and stochastic).
+<p class="highlight">
+<strong>Scientific Machine Learning:</strong> Ensemble score and flow-based generative models 
+for data assimilation in complex dynamical systems.
 </p>
 
-<p>
-<strong>Numerical Methods and Analysis:</strong> Eulerian FEM for PDEs on moving domain 
+<p class="highlight">
+<strong>Structure-Preserving Numerical Methods:</strong> Compatible FEM for deterministic 
+and stochastic geophysical fluid models.
 </p>
 
-<!-- Links -->
+<p class="highlight">
+<strong>Numerical Analysis of PDEs:</strong> Eulerian and space-time FEM for PDEs on moving domains.
+</p>
+
 <h2>Links</h2>
 
 <div class="links">
@@ -175,8 +184,6 @@ Previously at Imperial College London, University of Konstanz, and IISc Bangalor
 <i class="fab fa-researchgate"></i> ResearchGate
 </a>
 </div>
-
-<p class="email">Email: maneeshs@srmist.edu.in</p>
 
 </main>
 
