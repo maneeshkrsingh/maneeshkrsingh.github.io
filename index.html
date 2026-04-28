@@ -5,14 +5,104 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maneesh Kumar Singh</title>
 
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-body { font-family: Arial; margin:0; background:#0f172a; color:#e5e7eb; }
-header { text-align:center; padding:40px 20px; }
-nav a { margin:0 10px; color:#60a5fa; text-decoration:none; }
-nav a:hover { color:#93c5fd; }
-main { max-width:900px; margin:auto; padding:20px; text-align:center; }
-p { color:#d1d5db; line-height:1.6; }
-h2 { margin-top:40px; }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 12px;
+    color: #60a5fa;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* Main */
+main {
+    max-width: 850px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    color: #d1d5db;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+h2 {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* Links section */
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: #1e293b;
+    color: #e5e7eb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.links a i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Hover effect */
+.links a:hover {
+    background: #334155;
+    color: #60a5fa;
+    transform: translateY(-2px);
+}
+
+/* Email */
+.email {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #9ca3af;
+}
 </style>
 </head>
 
@@ -33,7 +123,7 @@ h2 { margin-top:40px; }
 
 <main>
 
-<img src="assets/img/profile.jpg" width="150" style="border-radius:50%; margin-bottom:20px;">
+<img src="assets/img/profile.jpg" class="profile-img">
 
 <p>
 I work on computational methods for partial differential equations and data assimilation, 
@@ -60,18 +150,30 @@ Previously at Imperial College London, University of Konstanz, and IISc Bangalor
 <strong>Numerical Methods:</strong> Finite element and finite difference schemes for singularly perturbed PDEs.
 </p>
 
-<!-- Contact -->
+<!-- Links -->
 <h2>Links</h2>
 
-<p>
-<a href="https://github.com/maneeshkrsingh">GitHub</a> ·
-<a href="https://scholar.google.com/citations?user=LavliJsAAAAJ">Google Scholar</a> ·
-<a href="https://www.linkedin.com/in/maneesh-kumar-singh-a12a2b151/">LinkedIn</a> ·
-<a href="https://www.researchgate.net/profile/Maneesh-Singh">ResearchGate</a>
-</p>
+<div class="links">
+<a href="https://github.com/maneeshkrsingh" target="_blank">
+<i class="fab fa-github"></i> GitHub
+</a>
 
-<p>Email: maneeshs@srmist.edu.in</p>
+<a href="https://scholar.google.com/citations?user=LavliJsAAAAJ" target="_blank">
+<i class="fas fa-graduation-cap"></i> Google Scholar
+</a>
+
+<a href="https://www.linkedin.com/in/maneesh-kumar-singh-a12a2b151/" target="_blank">
+<i class="fab fa-linkedin"></i> LinkedIn
+</a>
+
+<a href="https://www.researchgate.net/profile/Maneesh-Singh" target="_blank">
+<i class="fab fa-researchgate"></i> ResearchGate
+</a>
+</div>
+
+<p class="email">Email: maneeshs@srmist.edu.in</p>
 
 </main>
+
 </body>
 </html>
