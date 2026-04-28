@@ -28,7 +28,7 @@ nav a:hover {
 }
 
 main {
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
   padding: 20px;
 }
@@ -44,12 +44,54 @@ h3 {
 
 p {
   color: #d1d5db;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 ul {
   color: #d1d5db;
-  line-height: 1.6;
+  line-height: 1.7;
+}
+
+/* Research diagram */
+.research-diagram {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+    margin: 40px auto;
+}
+
+.box {
+    position: absolute;
+    padding: 12px 14px;
+    background: #1e293b;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #e5e7eb;
+    border: 1px solid #334155;
+    width: 200px;
+}
+
+.center {
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2563eb;
+    font-weight: bold;
+}
+
+.top-left { top: 0; left: 0; }
+.top-right { top: 0; right: 0; }
+.bottom-left { bottom: 0; left: 0; }
+.bottom-right { bottom: 0; right: 0; }
+
+.diagram-caption {
+    text-align: center;
+    font-size: 14px;
+    color: #9ca3af;
+    max-width: 700px;
+    margin: auto;
 }
 </style>
 </head>
@@ -63,7 +105,7 @@ ul {
 <a href="research.html">Research</a>
 <a href="publications.html">Publications</a>
 <a href="teaching.html">Teaching</a>
-<a href="cv.pdf">CV</a>
+<a href="cv.html">CV</a>
 </nav>
 </header>
 
@@ -72,26 +114,43 @@ ul {
 <h2>Research</h2>
 
 <p>
-My research focuses on the development of computational methods for partial differential equations (PDEs), 
-with an emphasis on stochastic modelling, data assimilation, and scientific machine learning. 
-I work at the intersection of numerical analysis and applied computational science, aiming to design scalable 
-and structure-preserving algorithms for complex dynamical systems.
+My research integrates stochastic modelling, numerical analysis, and scientific machine learning 
+towards a unified framework for Bayesian scientific computing. The goal is to develop mathematically 
+rigorous and computationally efficient methods for uncertainty quantification in complex dynamical systems.
+</p>
+
+<!-- Research Diagram -->
+<div class="research-diagram">
+
+    <div class="box top-left">Advanced Particle Filters for SPDEs</div>
+    <div class="box top-right">Structure-Preserving Numerics</div>
+
+    <div class="box center">Bayesian Scientific Computing</div>
+
+    <div class="box bottom-left">DA for Stochastic GFD Models</div>
+    <div class="box bottom-right">Probabilistic ML<br>(Generative Modelling)</div>
+
+</div>
+
+<p class="diagram-caption">
+Unifying theme: mathematically rigorous and computationally efficient methods 
+for uncertainty quantification in complex dynamical systems.
 </p>
 
 <h3>Core Themes</h3>
 <ul>
 <li>Data assimilation and Bayesian filtering</li>
-<li>Stochastic Modelling and uncertainty quantification</li>
+<li>Stochastic modelling and uncertainty quantification</li>
 <li>Scientific machine learning for physical systems</li>
-<li>Numerical methods for PDEs on fixed and moving domains </li>
+<li>Numerical methods for PDEs on fixed and moving domains</li>
 </ul>
 
 <h3>Current Focus</h3>
 <p>
-My current work involves developing advanced Bayesian particle filtering methods for stochastic PDEs, 
+My current work develops advanced Bayesian particle filtering methods for stochastic PDEs, 
 including nudging-based and probabilistic approaches. These methods are designed to integrate 
-observational data into high-dimensional dynamical systems, with applications in fluid dynamics 
-and numerical weather prediction.
+observational data into high-dimensional dynamical systems, with applications in geophysical 
+fluid dynamics and numerical weather prediction.
 </p>
 
 <h3>Applications</h3>
