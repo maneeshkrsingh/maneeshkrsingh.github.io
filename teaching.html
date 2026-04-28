@@ -5,11 +5,102 @@
 <title>Teaching</title>
 
 <style>
-body { font-family: Arial; margin:0; background:#0f172a; color:#e5e7eb; }
-header { text-align:center; padding:40px 20px; }
-nav a { margin:0 10px; color:#60a5fa; text-decoration:none; }
-main { max-width:900px; margin:auto; padding:20px; }
-ul { color:#d1d5db; line-height:1.6; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #60a5fa;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #93c5fd;
+}
+
+/* Main */
+main {
+  max-width: 780px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Intro text */
+.intro {
+  color: #9ca3af;
+  font-size: 15px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+/* Teaching block */
+.teach-block {
+  margin-bottom: 25px;
+  padding: 18px 20px;
+  background: #1e293b;
+  border-radius: 10px;
+  border-left: 4px solid #60a5fa;
+  transition: 0.2s;
+}
+
+.teach-block:hover {
+  transform: translateY(-2px);
+}
+
+/* Institution */
+.institution {
+  font-size: 17px;
+  font-weight: bold;
+  color: #93c5fd;
+}
+
+/* Role and year */
+.meta {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-top: 3px;
+}
+
+/* Courses */
+.courses {
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+/* Bullet styling */
+.courses span {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* Section divider */
+.section-divider {
+  margin: 40px 0 20px;
+  border-top: 1px solid #334155;
+}
+
+/* Teaching philosophy */
+.philosophy {
+  font-size: 15px;
+  color: #d1d5db;
+  line-height: 1.8;
+}
 </style>
 </head>
 
@@ -17,6 +108,7 @@ ul { color:#d1d5db; line-height:1.6; }
 
 <header>
 <h1>Maneesh Kumar Singh</h1>
+
 <nav>
 <a href="index.html">Home</a>
 <a href="research.html">Research</a>
@@ -30,13 +122,57 @@ ul { color:#d1d5db; line-height:1.6; }
 
 <h2>Teaching</h2>
 
-<ul>
-<li>Probability and Queuing Theory — SRM Institute</li>
-<li>Computational Linear Algebra — Imperial College London</li>
-<li>Finite Element Methods — Imperial College London</li>
-<li>Calculus, ODE, PDE — IIT Guwahati</li>
-</ul>
+<p class="intro">
+I have experience teaching undergraduate and postgraduate courses in mathematics, 
+numerical analysis, and computational science. My teaching focuses on building 
+strong mathematical foundations while connecting theory with computational and 
+real-world applications.
+</p>
+
+<!-- SRM -->
+<div class="teach-block">
+<div class="institution">SRM Institute of Science and Technology, Chennai</div>
+<div class="meta">Course Instructor · 2026–</div>
+<div class="courses">
+<span>•</span> Probability and Queuing Theory
+</div>
+</div>
+
+<!-- Imperial -->
+<div class="teach-block">
+<div class="institution">Imperial College London</div>
+<div class="meta">Substitute Instructor · 2022–2025</div>
+<div class="courses">
+<span>•</span> Computational Linear Algebra  
+<span>•</span> Finite Element Methods
+</div>
+</div>
+
+<!-- IIT -->
+<div class="teach-block">
+<div class="institution">Indian Institute of Technology Guwahati</div>
+<div class="meta">Teaching Fellow · 2014–2018</div>
+<div class="courses">
+<span>•</span> Calculus  
+<span>•</span> Linear Algebra & ODE  
+<span>•</span> Scientific Computing  
+<span>•</span> Partial Differential Equations  
+<span>•</span> Computational Finance
+</div>
+</div>
+
+<div class="section-divider"></div>
+
+<h3>Teaching Approach</h3>
+
+<p class="philosophy">
+My teaching emphasizes conceptual clarity, mathematical rigor, and computational intuition. 
+I aim to bridge theoretical analysis with modern computational tools, preparing students to 
+work across applied mathematics, scientific computing, and data-driven modelling. Courses are 
+designed to encourage problem-solving, independent thinking, and connections to real-world systems.
+</p>
 
 </main>
+
 </body>
 </html>
