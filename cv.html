@@ -13,15 +13,36 @@ body {
     color: #e5e7eb;
 }
 
+/* Navbar */
+nav {
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav a {
+    margin: 0 12px;
+    color: #60a5fa;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+nav a.active {
+    color: #93c5fd;
+}
+
 /* Layout */
 .container {
     display: flex;
     max-width: 1000px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 20px;
 }
 
-/* Left panel */
+/* Sidebar */
 .sidebar {
     width: 30%;
     padding-right: 30px;
@@ -43,13 +64,31 @@ body {
     color: #9ca3af;
 }
 
-/* Right panel */
+.sidebar a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #93c5fd;
+}
+
+/* CV Button */
+.cv-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #1e293b;
+    border-radius: 8px;
+}
+
+/* Content */
 .content {
     width: 70%;
 }
 
 h1 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -66,20 +105,19 @@ p, li {
 ul {
     padding-left: 18px;
 }
-
-/* Links */
-a {
-    color: #60a5fa;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #93c5fd;
-}
 </style>
 </head>
 
 <body>
+
+<!-- Navigation -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html" class="active">CV</a>
+</nav>
 
 <div class="container">
 
@@ -97,12 +135,12 @@ a:hover {
         <a href="https://github.com/maneeshkrsingh">GitHub</a>
     </p>
 
-    <p style="margin-top:20px;">
-        <a href="cv.pdf" target="_blank">⬇ Full CV (PDF)</a>
-    </p>
+    <a href="cv.pdf" target="_blank" class="cv-btn">
+        📄 Download Full CV (PDF)
+    </a>
 </div>
 
-<!-- Content -->
+<!-- Main Content -->
 <div class="content">
 
 <h1>Short CV</h1>
@@ -137,7 +175,7 @@ Scientific machine learning · Multiscale methods
 <ul>
 <li>Holm, Singh, Street (2026) — Proc. Royal Society A</li>
 <li>Holm, Singh (2026) — Chaos, Solitons & Fractals</li>
-<li>Cotter, Crisan, Singh (2024) — Springer</li>
+<li>Cotter, Crisan, Singh (2024) — STUOD III, Mathematics of Planet Earth</li>
 <li>Frei, Singh (2024) — Journal of Scientific Computing</li>
 <li>Singh (2024) — Applied Numerical Mathematics</li>
 </ul>
