@@ -151,7 +151,6 @@ li { margin-bottom: 10px; }
 }
 .wseg:hover path, .wseg:focus-visible path { opacity: 1; transform: scale(1.035); }
 .wseg:focus-visible { outline: none; }
-.wseg-new path { stroke: #e9d5ff; stroke-width: 2; stroke-dasharray: 6 5; }
 
 .wlab {
   fill: #fff;
@@ -167,9 +166,6 @@ li { margin-bottom: 10px; }
   pointer-events: none;
 }
 
-.wnew rect { fill: #faf5ff; }
-.wnew text { fill: #6b21a8; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-anchor: middle; }
-
 .whub { fill: var(--bg); }
 .whub-ring { fill: none; stroke: url(#hubgrad); stroke-width: 4; }
 .whub-text { fill: var(--text); font-size: 18px; font-weight: 700; text-anchor: middle; }
@@ -181,20 +177,6 @@ li { margin-bottom: 10px; }
   color: var(--text-muted);
   max-width: 680px;
   margin: 0 auto;
-}
-
-/* "New" tag next to section headings */
-.tag-new {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 8px;
-  padding: 2px 9px;
-  border-radius: 999px;
-  background: #7e22ce;
-  color: #faf5ff;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
 }
 
 /* Research theme sections */
