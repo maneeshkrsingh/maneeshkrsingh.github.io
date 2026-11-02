@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maneeshkrsingh.github.io/sitemap.xml

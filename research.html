@@ -2,156 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Research</title>
-
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #0f172a;
-  color: #e5e7eb;
-}
-
-/* Header */
-header {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-nav a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: #60a5fa;
-  font-size: 15px;
-}
-
-nav a:hover {
-  color: #93c5fd;
-}
-
-/* Main */
-main {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-}
-
-/* Text */
-p {
-  color: #d1d5db;
-  line-height: 1.7;
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-
-h3 {
-  margin-top: 30px;
-  color: #60a5fa;
-}
-
-/* ===================== */
-/* Research Diagram */
-/* ===================== */
-
-.research-diagram {
-    position: relative;
-    width: 100%;
-    max-width: 750px;
-    height: 380px;
-    margin: 50px auto;
-}
-
-/* Boxes */
-.box {
-    position: absolute;
-    padding: 12px 16px;
-    background: #1e293b;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 14px;
-    color: #e5e7eb;
-    border: 1px solid #334155;
-    width: 210px;
-}
-
-/* Center box */
-.center {
-    top: 140px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #2563eb;
-    font-weight: bold;
-}
-
-/* Positions */
-.top-left { top: 0; left: 40px; }
-.top-right { top: 0; right: 40px; }
-.bottom-left { bottom: 0; left: 40px; }
-.bottom-right { bottom: 0; right: 40px; }
-
-/* Lines */
-.line {
-    position: absolute;
-    height: 2px;
-    background: #475569;
-    transform-origin: left;
-}
-
-.line-tl {
-    width: 180px;
-    top: 95px;
-    left: 150px;
-    transform: rotate(28deg);
-}
-
-.line-tr {
-    width: 180px;
-    top: 95px;
-    right: 150px;
-    transform: rotate(-28deg);
-}
-
-.line-bl {
-    width: 180px;
-    bottom: 95px;
-    left: 150px;
-    transform: rotate(-28deg);
-}
-
-.line-br {
-    width: 180px;
-    bottom: 95px;
-    right: 150px;
-    transform: rotate(28deg);
-}
-
-/* Caption */
-.diagram-caption {
-    text-align: center;
-    font-size: 14px;
-    color: #9ca3af;
-    max-width: 700px;
-    margin: auto;
-}
-
-/* Lists */
-ul {
-  line-height: 1.7;
-  color: #d1d5db;
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research · Maneesh Kumar Singh</title>
+<meta name="description" content="Research of Maneesh Kumar Singh: Bayesian scientific computing — particle filters for SPDEs, structure-preserving numerics, data assimilation for stochastic GFD models and generative modelling.">
+<link rel="canonical" href="https://maneeshkrsingh.github.io/research.html">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-<header>
-<h1>Maneesh Kumar Singh</h1>
-
-<nav>
+<header class="site-header">
+<h1><a href="index.html">Maneesh Kumar Singh</a></h1>
+<nav class="site-nav" aria-label="Main">
 <a href="index.html">Home</a>
-<a href="research.html">Research</a>
+<a href="research.html" aria-current="page">Research</a>
 <a href="publications.html">Publications</a>
 <a href="teaching.html">Teaching</a>
 <a href="cv.html">CV</a>
@@ -163,32 +27,21 @@ ul {
 <h2>Research</h2>
 
 <p>
-My research integrates stochastic modelling, numerical analysis, and scientific machine learning 
-towards a unified framework for Bayesian scientific computing. The aim is to develop mathematically 
+My research integrates stochastic modelling, numerical analysis, and scientific machine learning
+towards a unified framework for Bayesian scientific computing. The aim is to develop mathematically
 rigorous and computationally efficient methods for uncertainty quantification in complex dynamical systems.
 </p>
 
-<!-- Diagram -->
-<div class="research-diagram">
-
-    <div class="box top-left">Advanced Particle Filters for SPDEs</div>
-    <div class="box top-right">Structure-Preserving Numerics</div>
-
-    <div class="box center">Bayesian Scientific Computing</div>
-
-    <div class="box bottom-left">DA for Stochastic GFD Models</div>
-    <div class="box bottom-right">Probabilistic ML<br>(Generative Modelling)</div>
-
-    <!-- Lines -->
-    <div class="line line-tl"></div>
-    <div class="line line-tr"></div>
-    <div class="line line-bl"></div>
-    <div class="line line-br"></div>
-
+<div class="research-diagram" role="img" aria-label="Bayesian Scientific Computing at the centre, linking advanced particle filters for SPDEs, structure-preserving numerics, data assimilation for stochastic GFD models, and probabilistic ML (generative modelling)">
+  <div class="box tl">Advanced Particle Filters for SPDEs</div>
+  <div class="box tr">Structure-Preserving Numerics</div>
+  <div class="box center">Bayesian Scientific Computing</div>
+  <div class="box bl">DA for Stochastic GFD Models</div>
+  <div class="box br">Probabilistic ML<br>(Generative Modelling)</div>
 </div>
 
 <p class="diagram-caption">
-Unifying theme: mathematically rigorous and computationally efficient methods 
+Unifying theme: mathematically rigorous and computationally efficient methods
 for uncertainty quantification in complex dynamical systems.
 </p>
 
@@ -202,9 +55,9 @@ for uncertainty quantification in complex dynamical systems.
 
 <h3>Current Focus</h3>
 <p>
-My current work focuses on advanced Bayesian particle filtering methods for stochastic PDEs, 
-including nudging-based and probabilistic approaches. These methods integrate observational 
-data into high-dimensional dynamical systems, with applications in geophysical fluid dynamics 
+My current work focuses on advanced Bayesian particle filtering methods for stochastic PDEs,
+including nudging-based and probabilistic approaches. These methods integrate observational
+data into high-dimensional dynamical systems, with applications in geophysical fluid dynamics
 and numerical weather prediction.
 </p>
 
@@ -217,6 +70,8 @@ and numerical weather prediction.
 </ul>
 
 </main>
+
+<footer class="site-footer">© 2026 Maneesh Kumar Singh</footer>
 
 </body>
 </html>

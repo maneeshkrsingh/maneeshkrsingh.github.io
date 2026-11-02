@@ -3,155 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV - Maneesh Kumar Singh</title>
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #0f172a;
-    color: #e5e7eb;
-}
-
-/* Navbar */
-nav {
-    text-align: center;
-    padding: 20px 0;
-}
-
-nav a {
-    margin: 0 12px;
-    color: #60a5fa;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #93c5fd;
-}
-
-nav .active {
-    color: #93c5fd;
-}
-
-/* Layout */
-.container {
-    display: flex;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Sidebar */
-.sidebar {
-    width: 30%;
-    text-align: center;
-    padding-right: 25px;
-}
-
-.sidebar img {
-    width: 140px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-.sidebar h2 {
-    margin-bottom: 5px;
-}
-
-.sidebar p {
-    font-size: 14px;
-    color: #9ca3af;
-}
-
-.sidebar a {
-    color: #60a5fa;
-    text-decoration: none;
-}
-
-.sidebar a:hover {
-    color: #93c5fd;
-}
-
-.cv-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 14px;
-    background: #1e293b;
-    border-radius: 8px;
-}
-
-/* Content */
-.content {
-    width: 70%;
-}
-
-h1 {
-    margin-bottom: 10px;
-}
-
-h2 {
-    margin-top: 28px;
-    border-bottom: 1px solid #334155;
-    padding-bottom: 5px;
-}
-
-p, li {
-    color: #d1d5db;
-    line-height: 1.7;
-}
-
-ul {
-    padding-left: 18px;
-}
-</style>
+<title>CV · Maneesh Kumar Singh</title>
+<meta name="description" content="Short CV of Maneesh Kumar Singh — positions, education, selected publications and technical skills. Full CV available as PDF.">
+<link rel="canonical" href="https://maneeshkrsingh.github.io/cv.html">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-<!-- Navigation -->
-<nav>
+<header class="site-header">
+<h1><a href="index.html">Maneesh Kumar Singh</a></h1>
+<nav class="site-nav" aria-label="Main">
 <a href="index.html">Home</a>
 <a href="research.html">Research</a>
 <a href="publications.html">Publications</a>
 <a href="teaching.html">Teaching</a>
-<a href="cv.html" class="active">CV</a>
+<a href="cv.html" aria-current="page">CV</a>
 </nav>
+</header>
 
-<div class="container">
+<div class="cv-layout">
 
-<!-- Sidebar -->
-<div class="sidebar">
-    <img src="assets/img/profile.jpg">
+<aside class="cv-sidebar">
+  <img src="assets/img/profile.jpg" alt="Portrait of Maneesh Kumar Singh" width="140" height="140">
+  <h2>Maneesh Kumar Singh</h2>
+  <p>Computational Researcher</p>
+  <p>Numerical PDEs · Scientific ML · Data Assimilation</p>
 
-    <h2>Maneesh Kumar Singh</h2>
-    <p>Computational Researcher</p>
-    <p>Numerical PDEs · Scientific ML · Data Assimilation</p>
+  <ul class="cv-contact">
+    <li><a href="mailto:maneeshs@srmist.edu.in">maneeshs@srmist.edu.in</a></li>
+    <li><a href="https://github.com/maneeshkrsingh" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="https://scholar.google.com/citations?user=LavliJsAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+    <li><a href="https://www.linkedin.com/in/maneesh-kumar-singh-a12a2b151/" target="_blank" rel="noopener">LinkedIn</a></li>
+  </ul>
 
-    <p style="margin-top:20px;">
-        <a href="mailto:maneeshs@srmist.edu.in">Email</a><br>
-        <a href="https://maneeshkrsingh.github.io">Website</a><br>
-        <a href="https://github.com/maneeshkrsingh">GitHub</a>
-    </p>
+  <a href="cv.pdf" target="_blank" rel="noopener" class="cv-btn">📄 Download Full CV (PDF)</a>
+</aside>
 
-    <a href="cv.pdf" target="_blank" class="cv-btn">
-        📄 Download Full CV (PDF)
-    </a>
-</div>
-
-<!-- Content -->
-<div class="content">
+<main class="cv-content">
 
 <h1>Short CV</h1>
 
 <h2>Current Position</h2>
 <p>
 Research Assistant Professor<br>
-SRM Institute of Science and Technology (2026– )
+SRM Institute of Science and Technology, Chennai (2026–present)
 </p>
 
 <h2>Research Interests</h2>
 <p>
-Numerical methods for PDEs · Stochastic modelling · Data assimilation · 
+Numerical methods for PDEs · Stochastic modelling · Data assimilation ·
 Scientific machine learning · Multiscale methods
 </p>
 
@@ -171,12 +72,13 @@ Scientific machine learning · Multiscale methods
 
 <h2>Selected Publications</h2>
 <ul>
-<li>Holm, Singh, Street (2026) — Proc. Royal Society A</li>
-<li>Holm, Singh (2026) — Chaos, Solitons & Fractals</li>
-<li>Cotter, Crisan, Singh (2024) — Springer</li>
-<li>Frei, Singh (2024) — Journal of Scientific Computing</li>
-<li>Singh (2024) — Applied Numerical Mathematics</li>
+<li>Holm, Singh, Street (2026) — <em>Proceedings of the Royal Society A</em></li>
+<li>Holm, Singh (2026) — <em>Chaos, Solitons &amp; Fractals</em></li>
+<li>Cotter, Crisan, Singh (2024) — <em>Stochastic Transport in Upper Ocean Dynamics III</em>, Springer</li>
+<li>Frei, Singh (2024) — <em>Journal of Scientific Computing</em></li>
+<li>Singh (2024) — <em>Applied Numerical Mathematics</em></li>
 </ul>
+<p class="muted"><a href="publications.html">Full publication list →</a></p>
 
 <h2>Technical Skills</h2>
 <ul>
@@ -186,23 +88,22 @@ Scientific machine learning · Multiscale methods
 <li>PyTorch, JAX (Scientific ML)</li>
 </ul>
 
-<!-- Certifications -->
 <h2>Additional Training</h2>
-
-<p style="color:#9ca3af; font-size:14px;">
-Supplementary training in machine learning supporting research in data assimilation 
+<p class="muted">
+Supplementary training in machine learning supporting research in data assimilation
 and scientific machine learning.
 </p>
-
 <ul>
 <li>DeepLearning.AI — Structuring Machine Learning Projects (2022)</li>
 <li>DeepLearning.AI — Improving Deep Neural Networks (2022)</li>
 <li>DeepLearning.AI — Neural Networks and Deep Learning (2022)</li>
 </ul>
 
-</div>
+</main>
 
 </div>
+
+<footer class="site-footer">© 2026 Maneesh Kumar Singh</footer>
 
 </body>
 </html>
