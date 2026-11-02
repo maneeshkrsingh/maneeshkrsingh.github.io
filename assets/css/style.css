@@ -173,6 +173,7 @@ li { margin-bottom: 10px; }
   transition: border-color 0.2s, transform 0.2s;
 }
 .theme-card strong { display: block; color: var(--text); font-size: 15.5px; margin-bottom: 4px; }
+.theme-card-wide { grid-column: 1 / -1; }
 .theme-card:hover { border-color: var(--accent); transform: translateY(-2px); text-decoration: none; }
 
 .news { list-style: none; padding: 0; margin: 0; }
