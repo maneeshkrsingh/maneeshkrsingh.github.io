@@ -298,6 +298,8 @@ li { margin-bottom: 10px; }
 .whub { fill: var(--bg); }
 .whub-ring { fill: none; stroke: url(#hubgrad); stroke-width: 4; }
 .whub-text { fill: var(--text); font-size: 18px; font-weight: 700; text-anchor: middle; }
+.whub-lab { fill: var(--accent); font-size: 24px; font-weight: 700; letter-spacing: 0.01em; }
+.whub-small { font-size: 15px; font-weight: 600; }
 .whub-amp { fill: var(--accent); font-size: 16px; font-weight: 600; }
 
 .diagram-caption {
