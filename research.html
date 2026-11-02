@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research · Maneesh Kumar Singh</title>
-<meta name="description" content="Research of Maneesh Kumar Singh: Bayesian scientific computing — particle filters for SPDEs, structure-preserving numerics, data assimilation for stochastic GFD models and generative modelling.">
+<meta name="description" content="Research of Maneesh Kumar Singh in Bayesian scientific computing: data assimilation for SPDEs, structure-preserving numerics for geophysical fluids, scientific machine learning and numerical analysis of PDEs.">
 <link rel="canonical" href="https://maneeshkrsingh.github.io/research.html">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -27,47 +27,107 @@
 <h2>Research</h2>
 
 <p>
-My research integrates stochastic modelling, numerical analysis, and scientific machine learning
-towards a unified framework for Bayesian scientific computing. The aim is to develop mathematically
-rigorous and computationally efficient methods for uncertainty quantification in complex dynamical systems.
+My research sits in <strong>Bayesian scientific computing</strong>: combining stochastic modelling,
+numerical analysis and scientific machine learning to build mathematically rigorous and
+computationally efficient methods for uncertainty quantification in complex dynamical systems,
+with geophysical fluid dynamics as the main application.
 </p>
 
-<div class="research-diagram" role="img" aria-label="Bayesian Scientific Computing at the centre, linking advanced particle filters for SPDEs, structure-preserving numerics, data assimilation for stochastic GFD models, and probabilistic ML (generative modelling)">
-  <div class="box tl">Advanced Particle Filters for SPDEs</div>
-  <div class="box tr">Structure-Preserving Numerics</div>
-  <div class="box center">Bayesian Scientific Computing</div>
-  <div class="box bl">DA for Stochastic GFD Models</div>
-  <div class="box br">Probabilistic ML<br>(Generative Modelling)</div>
+<div class="research-diagram">
+
+  <svg class="diagram-spokes" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+    <line x1="50" y1="50" x2="25" y2="16" vector-effect="non-scaling-stroke"/>
+    <line x1="50" y1="50" x2="75" y2="16" vector-effect="non-scaling-stroke"/>
+    <line x1="50" y1="50" x2="25" y2="84" vector-effect="non-scaling-stroke"/>
+    <line x1="50" y1="50" x2="75" y2="84" vector-effect="non-scaling-stroke"/>
+  </svg>
+
+  <a class="box tl" href="#data-assimilation">
+    <strong>Data Assimilation for SPDEs</strong>
+    Particle filters · nudging · global Girsanov nudged particle filter
+  </a>
+
+  <a class="box tr" href="#structure-preserving">
+    <strong>Structure-Preserving Numerics</strong>
+    Compatible, energy-conserving space–time FEM for geophysical fluids
+  </a>
+
+  <div class="box center">
+    <strong>Bayesian Scientific Computing</strong>
+    Uncertainty quantification for stochastic dynamical systems
+  </div>
+
+  <a class="box bl" href="#sciml">
+    <strong>Scientific Machine Learning</strong>
+    Consistent CutPINNs on curved domains · generative models for DA
+  </a>
+
+  <a class="box br" href="#numerical-analysis">
+    <strong>Numerical Analysis of PDEs</strong>
+    Moving domains · singular perturbation · radiative transfer
+  </a>
+
 </div>
 
 <p class="diagram-caption">
-Unifying theme: mathematically rigorous and computationally efficient methods
-for uncertainty quantification in complex dynamical systems.
+Applications: geophysical fluid dynamics, numerical weather prediction, and multiscale stochastic systems.
+Click a theme for details.
 </p>
 
-<h3>Core Themes</h3>
-<ul>
-<li>Data assimilation and Bayesian filtering</li>
-<li>Stochastic modelling and uncertainty quantification</li>
-<li>Scientific machine learning for physical systems</li>
-<li>Numerical methods for PDEs on fixed and moving domains</li>
-</ul>
-
-<h3>Current Focus</h3>
+<section class="theme" id="data-assimilation">
+<h3>Data Assimilation for Stochastic PDEs</h3>
 <p>
-My current work focuses on advanced Bayesian particle filtering methods for stochastic PDEs,
-including nudging-based and probabilistic approaches. These methods integrate observational
-data into high-dimensional dynamical systems, with applications in geophysical fluid dynamics
-and numerical weather prediction.
+Sequential Bayesian filtering for high-dimensional stochastic PDEs. I develop advanced particle
+filters with nudging, including the global Girsanov nudged particle filter, which uses a
+Girsanov change of measure to steer particles towards observations.
+Test models include the stochastic Camassa–Holm and Euler equations, implemented in Firedrake.
 </p>
-
-<h3>Applications</h3>
 <ul>
-<li>Geophysical fluid dynamics</li>
-<li>Numerical weather prediction</li>
-<li>Multiscale and stochastic systems</li>
-<li>Data-driven scientific computing</li>
+<li>Data assimilation using a global Girsanov nudged particle filter — <em>Statistics and Computing</em> (2026)</li>
+<li>Data assimilation for the stochastic Camassa–Holm equation using particle filtering — <em>Mathematics of Planet Earth</em> (2024)</li>
+<li>The GONG particle filter framework for data assimilation in SPDEs — CASML 2024</li>
 </ul>
+</section>
+
+<section class="theme" id="structure-preserving">
+<h3>Structure-Preserving Numerics for Geophysical Fluids</h3>
+<p>
+Discretisations that respect the conservation laws and geometric structure of the continuous
+model, so that long simulations and stochastic ensembles stay physically meaningful.
+</p>
+<ul>
+<li>Energy-conserving compatible space–time FEM for deterministic and stochastic rotating shallow water — under review, <em>J. Comput. Phys.</em> (<a href="https://arxiv.org/abs/2610.13624" target="_blank" rel="noopener">arXiv:2610.13624</a>)</li>
+<li>A comparative numerical study of stochastic Hamiltonian Camassa–Holm equations — <em>Proc. R. Soc. A</em> (2026)</li>
+<li>A multiscale Camassa–Holm equation — <em>Chaos, Solitons &amp; Fractals</em> (2026)</li>
+</ul>
+</section>
+
+<section class="theme" id="sciml">
+<h3>Scientific Machine Learning</h3>
+<p>
+Physics-informed neural networks with provable consistency on complex geometries: CutPINNs
+impose PDEs on curved level-set domains without body-fitted meshes. I am also exploring
+score- and flow-based generative models for data assimilation.
+</p>
+<ul>
+<li>Consistent CutPINNs for elliptic PDEs on curved level-set domains — under review (<a href="https://arxiv.org/abs/2605.25562" target="_blank" rel="noopener">arXiv:2605.25562</a>)</li>
+<li>Consistent CutPINNs for convection–diffusion equations on curved level-set domains — under review (<a href="https://arxiv.org/abs/2606.29147" target="_blank" rel="noopener">arXiv:2606.29147</a>)</li>
+</ul>
+</section>
+
+<section class="theme" id="numerical-analysis">
+<h3>Numerical Analysis of PDEs</h3>
+<p>
+Robust and convergent finite element and finite difference methods: PDEs on time-dependent
+domains, singularly perturbed multiscale systems, and the radiative transfer equation.
+</p>
+<ul>
+<li>An implicitly extended Crank–Nicolson scheme for the heat equation on a time-dependent domain — <em>J. Sci. Comput.</em> (2024)</li>
+<li>Operator-splitting FEM for the radiative transfer equation — <em>Numerical Algorithms</em> (2025)</li>
+<li>A discrete-ordinate weak Galerkin method for the radiative transfer equation — <em>Appl. Numer. Math.</em> (2024)</li>
+<li>Parameter-uniform methods for singularly perturbed systems — PhD work, 2018–2021 (<a href="publications.html">see publications</a>)</li>
+</ul>
+</section>
 
 </main>
 

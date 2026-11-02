@@ -136,31 +136,46 @@ li { margin-bottom: 10px; }
   transform: translateY(-2px);
 }
 
-/* ---------- Research diagram (responsive grid) ---------- */
+/* ---------- Research diagram (hub and spokes) ---------- */
 .research-diagram {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "tl tr"
     "c  c"
     "bl br";
-  gap: 18px 40px;
-  max-width: 640px;
+  gap: 30px 70px;
+  max-width: 700px;
   margin: 40px auto 16px;
 }
 
+.diagram-spokes {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+.diagram-spokes line { stroke: var(--accent); stroke-width: 2; stroke-opacity: 0.55; }
+
 .box {
-  padding: 12px 16px;
+  position: relative;
+  z-index: 1;
+  padding: 14px 16px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
   text-align: center;
-  font-size: 14px;
-  color: var(--text);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
 }
+.box strong { display: block; color: var(--text); font-size: 15px; margin-bottom: 4px; }
+.box a { color: inherit; }
+.box a:hover { text-decoration: none; }
+.box:hover { border-color: var(--accent); }
 
 .box.tl { grid-area: tl; }
 .box.tr { grid-area: tr; }
@@ -170,13 +185,13 @@ li { margin-bottom: 10px; }
 .box.center {
   grid-area: c;
   justify-self: center;
-  width: min(100%, 280px);
+  width: min(100%, 300px);
   background: var(--accent-strong);
   border-color: var(--accent-strong);
-  font-weight: bold;
-  font-size: 15px;
+  color: #dbeafe;
   padding: 16px;
 }
+.box.center strong { font-size: 16px; }
 
 .diagram-caption {
   text-align: center;
@@ -185,6 +200,12 @@ li { margin-bottom: 10px; }
   max-width: 640px;
   margin: 0 auto;
 }
+
+/* Research theme sections */
+.theme { margin-top: 34px; }
+.theme h3 { margin-bottom: 6px; }
+.theme ul { margin-top: 8px; }
+.theme li { font-size: 15px; }
 
 /* ---------- Publications ---------- */
 .pub-list li strong.year { color: var(--text); margin-right: 4px; }
@@ -266,9 +287,20 @@ li { margin-bottom: 10px; }
   .research-diagram {
     grid-template-columns: 1fr;
     grid-template-areas: "c" "tl" "tr" "bl" "br";
-    gap: 12px;
+    gap: 18px;
   }
+  .diagram-spokes { display: none; }
   .box.center { width: 100%; }
+  .box:not(.center)::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -19px;
+    width: 2px;
+    height: 18px;
+    background: var(--accent);
+    opacity: 0.55;
+  }
 
   .cv-layout { flex-direction: column; }
   .cv-sidebar { flex: none; }
