@@ -328,6 +328,7 @@ li { margin-bottom: 10px; }
   border: 1px solid var(--border);
   background: var(--surface);
 }
+.join-affil { margin: -4px 0 10px; color: var(--text-muted); font-size: 14px; }
 .join h3 { margin: 4px 0 8px; color: var(--text); font-size: 1.3rem; }
 .join-label {
   display: inline-block;
