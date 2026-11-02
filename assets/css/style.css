@@ -97,34 +97,82 @@ li { margin-bottom: 10px; }
 }
 
 /* ---------- Home ---------- */
-.home { text-align: center; }
+.intro-card {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.intro-card > div { flex: 1; min-width: 0; }
+.intro-card p { margin: 0 0 12px; }
 
 .profile-img {
-  width: 150px;
-  height: 150px;
+  flex: 0 0 170px;
+  width: 170px;
+  height: 170px;
   object-fit: cover;
   border-radius: 50%;
-  margin: 20px 0;
+  border: 3px solid var(--surface);
+  box-shadow: 0 0 0 2px var(--accent-strong);
 }
 
-.highlight { margin: 14px auto; }
+.role { color: var(--text); line-height: 1.6; }
+.role strong { font-size: 18px; }
 
 .hiring {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 10px 16px;
+  margin: 28px 0 0;
+  padding: 12px 18px;
   border-radius: 10px;
   border: 1px solid #4338ca;
   background: rgba(37, 99, 235, 0.12);
   font-size: 15px;
 }
 
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.theme-card {
+  display: block;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.55;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.theme-card strong { display: block; color: var(--text); font-size: 15.5px; margin-bottom: 4px; }
+.theme-card:hover { border-color: var(--accent); transform: translateY(-2px); text-decoration: none; }
+
+.news { list-style: none; padding: 0; margin: 0; }
+.news li {
+  display: flex;
+  gap: 14px;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+}
+.news li:last-child { border-bottom: 0; }
+.news-date {
+  flex: 0 0 auto;
+  height: fit-content;
+  padding: 1px 8px;
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 8px;
+  margin-top: 16px;
 }
 
 .links a {
@@ -336,5 +384,8 @@ li { margin-bottom: 10px; }
   .wlab { font-size: 21px; }
 
   .cv-layout { flex-direction: column; }
+  .intro-card { flex-direction: column; align-items: center; text-align: center; gap: 18px; }
+  .intro-card .links { justify-content: center; }
+  .theme-grid { grid-template-columns: 1fr; }
   .cv-sidebar { flex: none; }
 }
