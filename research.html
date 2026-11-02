@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research · Maneesh Kumar Singh</title>
-<meta name="description" content="Research of Maneesh Kumar Singh in scientific computing and probabilistic machine learning: data assimilation for SPDEs, structure-preserving numerics for geophysical fluids, scientific machine learning and numerical analysis of PDEs.">
+<meta name="description" content="Research of Maneesh Kumar Singh: structure-preserving numerics, Bayesian data assimilation, generative modelling, physics-informed machine learning and numerical analysis.">
 <link rel="canonical" href="https://maneeshkrsingh.github.io/research.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,71 +31,57 @@
 <main>
 
 <h2 class="page-title">Research</h2>
-
-<p>
-My research sits at the interface of <strong>scientific computing</strong> and
-<strong>probabilistic machine learning</strong>. On the computing side, I build stochastic models
-of physical systems and discretise them in ways that respect their conservation laws and
-geometric structure, backed by rigorous numerical analysis. On the probabilistic side, I combine
-these models with observations through Bayesian data assimilation and, more recently, generative
-models such as diffusion and flow matching. The main application is geophysical fluid dynamics.
+<p class="lead">
+I develop computational methods for deterministic and stochastic PDEs and combine them with
+probabilistic machine learning. The main application is geophysical fluid dynamics.
 </p>
 
 <div class="wheel-wrap">
 <svg class="wheel" viewBox="0 0 600 600" role="img" aria-labelledby="wheel-title">
-  <title id="wheel-title">Research wheel: scientific computing and probabilistic machine learning at the centre, surrounded by stochastic models, structure-preserving numerics, Bayesian data assimilation, generative modelling, physics-informed machine learning, and numerical analysis</title>
+  <title id="wheel-title">Research wheel: scientific computing and probabilistic machine learning at the centre, surrounded by structure-preserving numerics, Bayesian data assimilation, generative modelling, physics-informed machine learning, and numerical analysis</title>
   <defs>
     <linearGradient id="hubgrad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#d97757"/><stop offset="0.5" stop-color="#c46686"/><stop offset="1" stop-color="#6a9bcc"/>
     </linearGradient>
   </defs>
   <circle cx="300" cy="300" r="286" class="wouter"/>
-  <a href="#structure-preserving" class="wseg" aria-label="Stochastic Models: SPDEs for geophysical flows">
-    <path d="M167.3,62.6 A272,272 0 0 1 432.7,62.6 L359.5,193.5 A122,122 0 0 0 240.5,193.5 Z" fill="#5a8bbe"/>
-    <text class="wlab"><tspan x="300.0" y="89.5">Stochastic</tspan><tspan x="300.0" y="111.5">Models</tspan></text>
-    <text class="wsub" x="300.0" y="135.5">SPDEs for geophysical flows</text>
-  </a>
-  <a href="#structure-preserving" class="wseg" aria-label="Structure-Preserving Numerics: compatible, energy-conserving FEM">
-    <path d="M439.3,66.4 A272,272 0 0 1 572.0,296.2 L422.0,298.3 A122,122 0 0 0 362.5,195.2 Z" fill="#4f6f8f"/>
-    <text class="wlab"><tspan x="470.6" y="177.0">Structure-</tspan><tspan x="470.6" y="199.0">Preserving</tspan><tspan x="470.6" y="221.0">Numerics</tspan></text>
-    <text class="wsub" x="470.6" y="245.0">space–time FEM</text>
+  <a href="#structure-preserving" class="wseg" aria-label="Structure-Preserving Numerics: compatible space–time FEM">
+    <path d="M143.2,77.7 A272,272 0 0 1 456.8,77.7 L370.3,200.3 A122,122 0 0 0 229.7,200.3 Z" fill="#4f6f8f"/>
+    <text class="wlab"><tspan x="300.0" y="74.5">Structure-</tspan><tspan x="300.0" y="96.5">Preserving</tspan><tspan x="300.0" y="118.5">Numerics</tspan></text>
+    <text class="wsub" x="300.0" y="142.5">compatible space–time FEM</text>
   </a>
   <a href="#data-assimilation" class="wseg" aria-label="Bayesian Data Assimilation: nudged particle filters">
-    <path d="M572.0,303.8 A272,272 0 0 1 439.3,533.6 L362.5,404.8 A122,122 0 0 0 422.0,301.7 Z" fill="#788c5d"/>
-    <text class="wlab"><tspan x="470.6" y="385.0">Bayesian Data</tspan><tspan x="470.6" y="407.0">Assimilation</tspan></text>
-    <text class="wsub" x="470.6" y="431.0">nudged particle filters</text>
+    <path d="M462.9,82.2 A272,272 0 0 1 559.8,380.4 L416.5,336.1 A122,122 0 0 0 373.1,202.3 Z" fill="#788c5d"/>
+    <text class="wlab"><tspan x="491.2" y="224.4">Bayesian Data</tspan><tspan x="491.2" y="246.4">Assimilation</tspan></text>
+    <text class="wsub" x="491.2" y="270.4">nudged particle filters</text>
   </a>
   <a href="#generative" class="wseg" aria-label="Generative Modelling: diffusion · flow matching">
-    <path d="M432.7,537.4 A272,272 0 0 1 167.3,537.4 L240.5,406.5 A122,122 0 0 0 359.5,406.5 Z" fill="#b4577a"/>
-    <text class="wlab"><tspan x="300.0" y="483.5">Generative</tspan><tspan x="300.0" y="505.5">Modelling</tspan></text>
-    <text class="wsub" x="300.0" y="529.5">diffusion · flow matching</text>
+    <path d="M557.5,387.7 A272,272 0 0 1 303.8,572.0 L301.7,422.0 A122,122 0 0 0 415.5,339.3 Z" fill="#b4577a"/>
+    <text class="wlab"><tspan x="418.1" y="449.1">Generative</tspan><tspan x="418.1" y="471.1">Modelling</tspan></text>
+    <text class="wsub" x="418.1" y="495.1">diffusion · flow matching</text>
   </a>
-  <a href="#sciml" class="wseg" aria-label="Physics-informed ML: consistent CutPINNs">
-    <path d="M160.7,533.6 A272,272 0 0 1 28.0,303.8 L178.0,301.7 A122,122 0 0 0 237.5,404.8 Z" fill="#c6613f"/>
-    <text class="wlab"><tspan x="129.4" y="385.0">Physics-</tspan><tspan x="129.4" y="407.0">Informed ML</tspan></text>
-    <text class="wsub" x="129.4" y="431.0">consistent CutPINNs</text>
+  <a href="#sciml" class="wseg" aria-label="Physics-Informed ML: consistent CutPINNs">
+    <path d="M296.2,572.0 A272,272 0 0 1 42.5,387.7 L184.5,339.3 A122,122 0 0 0 298.3,422.0 Z" fill="#c6613f"/>
+    <text class="wlab"><tspan x="181.9" y="449.1">Physics-</tspan><tspan x="181.9" y="471.1">Informed ML</tspan></text>
+    <text class="wsub" x="181.9" y="495.1">consistent CutPINNs</text>
   </a>
   <a href="#numerical-analysis" class="wseg" aria-label="Numerical Analysis: stability · convergence">
-    <path d="M28.0,296.2 A272,272 0 0 1 160.7,66.4 L237.5,195.2 A122,122 0 0 0 178.0,298.3 Z" fill="#8a7a5c"/>
-    <text class="wlab"><tspan x="129.4" y="188.0">Numerical</tspan><tspan x="129.4" y="210.0">Analysis</tspan></text>
-    <text class="wsub" x="129.4" y="234.0">stability · convergence</text>
+    <path d="M40.2,380.4 A272,272 0 0 1 137.1,82.2 L226.9,202.3 A122,122 0 0 0 183.5,336.1 Z" fill="#8a7a5c"/>
+    <text class="wlab"><tspan x="108.8" y="224.4">Numerical</tspan><tspan x="108.8" y="246.4">Analysis</tspan></text>
+    <text class="wsub" x="108.8" y="270.4">stability · convergence</text>
   </a>
   <circle cx="300" cy="300" r="108" class="whub"/>
   <circle cx="300" cy="300" r="108" class="whub-ring"/>
   <text class="whub-text"><tspan x="300" y="257">Scientific</tspan><tspan x="300" y="279">Computing</tspan><tspan class="whub-amp" x="300" y="304">&amp;</tspan><tspan x="300" y="329">Probabilistic</tspan><tspan x="300" y="351">Machine Learning</tspan></text>
 </svg>
 </div>
-
-<p class="diagram-caption">
-Applications: geophysical fluid dynamics, numerical weather prediction, and multiscale stochastic systems.
-Click a segment for details and papers.
-</p>
+<p class="diagram-caption">Click a segment for details and papers.</p>
 
 <section class="theme" id="structure-preserving">
-<h3>Stochastic Models and Structure-Preserving Numerics</h3>
+<h3>Structure-Preserving Numerics</h3>
 <p>
-Stochastic models of geophysical flows, and discretisations that respect their conservation laws
-and geometric structure, so that long simulations and stochastic ensembles stay physically meaningful.
+Compatible finite element discretisations that conserve energy and respect the geometric structure
+of geophysical fluid models, in both deterministic and stochastic settings.
 </p>
 <ul>
 <li>Energy-conserving compatible space–time FEM for deterministic and stochastic rotating shallow water — under review, <em>J. Comput. Phys.</em> (<a href="https://arxiv.org/abs/2610.13624" target="_blank" rel="noopener">arXiv:2610.13624</a>)</li>
@@ -105,34 +91,30 @@ and geometric structure, so that long simulations and stochastic ensembles stay 
 </section>
 
 <section class="theme" id="data-assimilation">
-<h3>Bayesian Data Assimilation for Stochastic PDEs</h3>
+<h3>Bayesian Data Assimilation</h3>
 <p>
-Sequential Bayesian filtering for high-dimensional stochastic PDEs. I develop advanced particle
-filters with nudging, including the global Girsanov nudged particle filter, which uses a
-Girsanov change of measure to steer particles towards observations.
-Test models include the stochastic Camassa–Holm and Euler equations, implemented in Firedrake.
+Particle filters with nudging for high-dimensional fluid models, including the global Girsanov
+nudged particle filter, which uses a Girsanov change of measure to steer particles towards observations.
 </p>
 <ul>
 <li>Data assimilation using a global Girsanov nudged particle filter — <em>Statistics and Computing</em> (2026)</li>
 <li>Data assimilation for the stochastic Camassa–Holm equation using particle filtering — <em>Mathematics of Planet Earth</em> (2024)</li>
-<li>The GONG particle filter framework for data assimilation in SPDEs — CASML 2024</li>
+<li>The GONG particle filter framework for data assimilation — CASML 2024</li>
 </ul>
 </section>
 
 <section class="theme" id="generative">
-<h3>Generative Modelling for Data Assimilation</h3>
+<h3>Generative Modelling</h3>
 <p>
-I develop score-based diffusion and flow-matching generative models
-as priors and samplers for Bayesian data assimilation in high-dimensional stochastic systems,
-building on the particle-filtering and nudging work above.
+Score-based diffusion and flow-matching models as priors and samplers for Bayesian data assimilation.
 </p>
 </section>
 
 <section class="theme" id="sciml">
-<h3>Physics-Informed Machine Learning</h3>
+<h3>Physics-Informed ML</h3>
 <p>
-Physics-informed neural networks with provable consistency on complex geometries: consistent
-CutPINNs solve PDEs on curved level-set domains without body-fitted meshes.
+Consistent CutPINNs: physics-informed neural networks that solve PDEs on curved level-set domains
+without body-fitted meshes.
 </p>
 <ul>
 <li>Consistent CutPINNs for elliptic PDEs on curved level-set domains — under review (<a href="https://arxiv.org/abs/2605.25562" target="_blank" rel="noopener">arXiv:2605.25562</a>)</li>
@@ -141,16 +123,16 @@ CutPINNs solve PDEs on curved level-set domains without body-fitted meshes.
 </section>
 
 <section class="theme" id="numerical-analysis">
-<h3>Numerical Analysis of PDEs</h3>
+<h3>Numerical Analysis</h3>
 <p>
-Robust and convergent finite element and finite difference methods: PDEs on time-dependent
-domains, singularly perturbed multiscale systems, and the radiative transfer equation.
+Robust, convergent finite element and finite difference methods for PDEs on moving domains,
+singularly perturbed multiscale systems, and the radiative transfer equation.
 </p>
 <ul>
 <li>An implicitly extended Crank–Nicolson scheme for the heat equation on a time-dependent domain — <em>J. Sci. Comput.</em> (2024)</li>
 <li>Operator-splitting FEM for the radiative transfer equation — <em>Numerical Algorithms</em> (2025)</li>
 <li>A discrete-ordinate weak Galerkin method for the radiative transfer equation — <em>Appl. Numer. Math.</em> (2024)</li>
-<li>Parameter-uniform methods for singularly perturbed systems — PhD work, 2018–2021 (<a href="publications.html">see publications</a>)</li>
+<li>Parameter-uniform methods for singularly perturbed systems — 2018–2021 (<a href="publications.html">see publications</a>)</li>
 </ul>
 </section>
 
